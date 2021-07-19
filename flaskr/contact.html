@@ -7,6 +7,10 @@
     <title>TP ANDREA PRIETO</title>
     <link rel= "shortcut icon" href="resources/img/open-book.png">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -29,27 +33,27 @@
         <div class="container">
             <h2>Contactenos</h2><br>
             <div class="row">
-                <div class="col-25">
+                <div class="col-4">
                 <label for="name">Nombre:</label>
                 </div>
-                <div class="col-75">
-                <input type="text" id="name" name="firstname" placeholder="su nombre..">
+                <div class="col-8">
+                <input class="form form-control" type="text" id="name" name="firstname" placeholder="Su nombre..">
                 </div>
             </div>
             <div class="row">
-                <div class="col-25">
+                <div class="col-4">
                 <label for="email">Email:</label>
                 </div>
-                <div class="col-75">
-                <input type="text" id="email" name="email" placeholder="Su email..">
+                <div class="col-8">
+                <input class="form form-control" type="text" id="email" name="email" placeholder="Su email..">
                 </div>
             </div>
             <div class="row">
-                <div class="col-25">
+                <div class="col-4">
                 <label for="Asunto">Asunto:</label>
                 </div>
-                <div class="col-75">
-                <select id="Asunto" name="Asunto">
+                <div class="col-8">
+                <select class="form form-control" id="Asunto" name="Asunto">
                     <option value="nada">Seleccione una opcion</option>
                     <option value="Solicitud">Solicitud</option>
                     <option value="Reclamo">Reclamo</option>
@@ -57,16 +61,17 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-25">
+                <div class="col-4">
                 <label for="subject">Comentario:</label>
                 </div>
-                <div class="col-75">
-                <textarea id="subject" name="subject" placeholder="Escribe tu consulta.." style="height:200px"></textarea>
+                <div class="col-8">
+                <textarea class="form form-control" id="subject" name="subject" placeholder="Escribe tu consulta.." style="height:200px"></textarea>
                 </div>
             </div>
+            <br>
             <div class="row">
-                <button type="borrar">Borrar</button>
-                <input type="submit" value="Enviar">
+                <button class="btn btn-primary" type="borrar">Borrar</button>
+                <input  class="btn btn-primary" style="margin-left: 4px" type="submit" value="Enviar">
             </div>
             </form>
         </div>
